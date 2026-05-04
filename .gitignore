@@ -1,0 +1,18 @@
+# Raw data — too large for GitHub; download instructions in README
+data/*.csv
+data/*.zip
+data/*.json
+
+# Jupyter
+.ipynb_checkpoints/
+*.pyc
+__pycache__/
+
+# Environment
+.env
+venv/
+.venv/
+
+# OS
+.DS_Store
+Thumbs.db
