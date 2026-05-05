@@ -64,13 +64,13 @@ nyc-311-cleaning/
 
 | Metric | Before | After |
 |--------|--------|-------|
-| Rows | — | — |
-| Columns | — | — |
-| Total null cells | — | — |
-| Duplicate rows | — | — |
+| Rows | 200,000 | 155,793 |
+| Columns | 44 | 41 |
+| Total null cells | 2,412,228 | 259,318 |
+| Duplicate rows (business-logic) | 44,207 | 0 |
 | Engineered features | 0 | 6 |
 
-> Fill in the before/after numbers after running the notebook.
+> 44,207 records (22% of the dataset) were identified as business-logic near-duplicates — same complaint type, address, borough, and date but different unique keys, indicating multi-agency routing. These were removed to prevent inflation of downstream analysis.
 
 ## Key cleaning decisions
 
